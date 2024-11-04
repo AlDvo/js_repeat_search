@@ -13,7 +13,6 @@ export class SearchPage extends BasePage {
         for (const row of await this.searchResult.all()){
             let textResult = await row.textContent();
             expect(await row).toContainText(text, {ignoreCase: true});
-            //`ожидали наличие текста ${text} в результате ${textResult}`
         }
     }
 }

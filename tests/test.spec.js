@@ -7,7 +7,7 @@ let app;
 let firstSearchText = "Пушкин";
 let secondSearchText = "Италия";
 
-test.only("Check_search_field", async ({ page }) => {
+test("Check_search_field", async ({ page }) => {
 
     app = new App(page);
 
